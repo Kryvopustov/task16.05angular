@@ -1,0 +1,45 @@
+body {
+  background: grey;
+}
+
+
+.container-fluid {
+  height: 600px;
+  padding-top: 30px;
+  padding-bottom: 70px;
+}
+
+.navbar {
+  /*padding-top: 15px;*/
+  padding-bottom: 10px;
+  border: 0;
+  border-radius: 0;
+  margin-bottom: 0;
+  font-size: 12px;
+  letter-spacing: 5px;
+}
+
+.navbar-nav li a:hover {
+  color: #1abc9c !important;
+}
+
+.bg-2 .well {
+  height: 200px;
+  word-wrap: break-word;
+  overflow: auto;
+  margin: 0px;
+}
+
+.bg-1 {
+  margin-top: 60px;
+  background: #cccccc;
+
+}
+
+.bg-2 {
+  background: #b3b3b3;
+}
+
+.bg-3 {
+  background: #999999;
+}
