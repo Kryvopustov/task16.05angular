@@ -2,6 +2,14 @@ body {
   background: grey;
 }
 
+.basicExample4 {
+  margin: 5px;
+}
+
+.done-true {
+  text-decoration: line-through;
+  color: grey;
+}
 
 .container-fluid {
   height: 600px;
