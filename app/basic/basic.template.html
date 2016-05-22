@@ -1,0 +1,87 @@
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" ui-sref="home">Home</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right" ng-init="loadScroll()">
+        <li><a ng-href="#/home#basic">Basic examples</a></li>
+        <li><a ng-href="#/home#section_2">Example 2</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid bg-basic-1">
+  <div class="page-header text-center">
+    <h1>Basic</h1>
+  </div>
+  <div class="row">
+
+    <div class="col-md-4">
+      <h3>Keyboard events</h3>
+      <p>Type something:
+        <input type="text" ng-keydown="onKeyDown($event)" ng-keyup="onKeyUp($event)" ng-keypress="onKeyPress($event)"></input>
+      </p>
+      <p>Key down Result: {{onKeyDownResult}}</p>
+      <p>Key up Result: {{onKeyUpResult}}</p>
+      <p>Key press Result: {{onKeyPressResult}}</p>
+    </div>
+
+    <div class="col-md-8">
+      <div class="row">
+
+        <div class="col-md-6">
+          <p>ng-hide</p>
+          <p>Click me: <input type="checkbox" ng-model="mustShow"></p>
+          <img src="content/img/basic.mouse.png" ng-hide="mustShow">
+        </div>
+
+        <div class="col-md-6">
+          <p>ng-show</p>
+          <p>Click me: <input type="checkbox" ng-model="mustHide"></p>
+          <img src="content/img/basic.mouse.png" ng-show="mustHide">
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid bg-basic-2">
+  <div class="page-header text-center">
+    <h1>Create my directives</h1>
+  </div>
+
+  <div>
+    <p>My first directive: Say Hello</p>
+    <p>write you name</p>
+    <input ng-model="nameGreeting">
+    <div my-greet="sayHello(nameGreeting)"></div>
+  </div>
+  <hr>
+  <div>
+    <my-customer info="viktoria"></my-customer>
+  </div>
+  <hr>
+  <div>
+    <p>Date format: <input ng-model="format"> </p>
+    <p>Current time is: <span my-current-time="format"></span></p>
+  </div>
+  <hr>
+  <div>
+    <div my-draggable>Drag Me</div>
+  </div>
+  <hr>
+  <div>
+    <input ng-model="test">
+      <button ng-repeat="x in test.split(' ') track by $index">{{x}}</button>
+  </div>
+
+</div>

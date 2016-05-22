@@ -2,6 +2,14 @@ body {
   background: grey;
 }
 
+.bg-basic-2 {
+  background: #b3b3b3;
+}
+
+.bg-basic-1 {
+  background: #cccccc;
+}
+
 .basicExample4 {
   margin: 5px;
 }
@@ -12,7 +20,6 @@ body {
 }
 
 .container-fluid {
-  height: 600px;
   padding-top: 30px;
   padding-bottom: 70px;
 }
@@ -39,15 +46,18 @@ body {
 }
 
 .bg-1 {
+  height: 600px;
   margin-top: 60px;
   background: #cccccc;
 
 }
 
 .bg-2 {
+  height: 600px;
   background: #b3b3b3;
 }
 
 .bg-3 {
+  height: 600px;
   background: #999999;
 }
