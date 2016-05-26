@@ -4,6 +4,7 @@
   angular.module('myApp', [
     'ui.router',
     'myApp.home',
-    'myApp.basic'
+    'myApp.basic',
+    'myApp.directives'
   ]);
 })();

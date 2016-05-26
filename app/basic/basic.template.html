@@ -60,10 +60,10 @@
   </div>
 
   <div>
-    <p>My first directive: Say Hello</p>
+    <p>Say Hello</p>
     <p>write you name</p>
     <input ng-model="nameGreeting">
-    <div my-greet="sayHello(nameGreeting)"></div>
+    <span my-greet="sayHello(nameGreeting)"></span>
   </div>
   <hr>
   <div>
@@ -79,9 +79,9 @@
     <div my-draggable>Drag Me</div>
   </div>
   <hr>
-  <div>
+<!--   <div my-task>
     <input ng-model="test">
       <button ng-repeat="x in test.split(' ') track by $index">{{x}}</button>
-  </div>
+  </div> -->
 
 </div>
